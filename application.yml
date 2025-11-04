@@ -1,0 +1,10 @@
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka # Khai bao dia chi Eureka Server de moi service se tu dong dang ky
+spring:
+  cloud:
+    config:
+      override-system-properties: false # Khong duoc phep ghi de cac cau hinh local cua service client
