@@ -11,3 +11,11 @@ spring:
           uri: lb:http://PRODUCT-SERVICE
           predicates:
             - Path=/api/v1/products/**
+        - id: category-service
+          uri: lb:http://PRODUCT-SERVICE
+          predicates:
+            - Path=/api/v1/category/**
+        - id: user-service
+          uri: lb:http://USER-SERVICE
+          predicates:
+            - Path=/api/v1/users/**
